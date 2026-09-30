@@ -17,6 +17,10 @@ if (-not (Test-Path $ActivityFile)) {
 }
 
 Set-Location $Repo
+$env:GIT_AUTHOR_NAME = "Uttam"
+$env:GIT_AUTHOR_EMAIL = "187442388+Uttamshetty-05@users.noreply.github.com"
+$env:GIT_COMMITTER_NAME = "Uttam"
+$env:GIT_COMMITTER_EMAIL = "187442388+Uttamshetty-05@users.noreply.github.com"
 git add $ActivityFile
 $Status = git status --porcelain
 if ($Status) {
